@@ -1,11 +1,44 @@
 :root{
     --americana:#fff8f1;
-    --grisBoton:#363432;
+    --grisBoton:#5a4734;
+    --botonback:#e6c4a2ad;
     --azulNavigate:#2743df;
     --negroLetras:black;
 }
 body{
     background-color: var(--americana);
+}
+.btn-float{
+    display: flex;
+    flex-direction: row;
+    align-items:end;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    position: fixed;
+    top: 90%;
+    left: 2px;
+    z-index: 10;
+}
+
+.btn-float>.btn{
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    border-width: 5px;
+    border-color: var(--grisBoton);
+    background-color: var(--botonback);
+    color: var(--grisBoton);;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-float>.btn:hover{
+       color: #fff8f1;
+       background-color: var(--grisBoton);
 }
 
 .projects{
@@ -29,6 +62,7 @@ h1{
 }
 #pic1>img{
     border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #presentacion{
@@ -44,6 +78,7 @@ h1{
 }
 #pic2>img{
     border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .middle{
@@ -59,23 +94,18 @@ h1{
     display: flex;
     flex-direction: row-reverse;
     height: fit-content;
+    
 }
 #pic3>img{
     height: 90%;
     padding: 2%;
     border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #left-text{
     text-align: left;
     border-right: 1px solid #333;
-}
-
-@media (max-width: 426px){
-    #right-text>h3,p{
-        text-align: left;
-    }
-
 }
 
 #right-text{
@@ -92,6 +122,7 @@ h1{
     height: 90%;
     border-radius: 30px;
     padding: 2%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card{
@@ -104,9 +135,40 @@ h1{
 .projects{
     width: 98%;
     margin: 1% auto;
+    z-index: 101;
 }
 
 .tecnologias{
     width: 98%;
     margin: auto;
+}
+
+@media (max-width: 426px){
+    #right-text>h3,p{
+        text-align: left;
+    }
+
+    #pic1>img{
+        box-shadow: 0px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    #pic2>img{
+        box-shadow: 0px -8px rgba(0, 0, 0, 0.3);
+    }
+
+    #pic3>img{
+        box-shadow: 0px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #pic4>img{
+        box-shadow: 0px -5px rgba(0, 0, 0, 0.3);
+    }
+
+}
+
+@media (max-width: 766px) {
+
+    #projects{
+        width: 40%;
+    }
 }
