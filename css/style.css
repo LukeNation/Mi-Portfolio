@@ -1,6 +1,6 @@
 :root{
     --americana:#fff8f1;
-    --grisBoton:#5a4734;
+    --colorBoton:#5a4734;
     --botonback:#e6c4a2ad;
     --azulNavigate:#2743df;
     --negroLetras:black;
@@ -25,9 +25,9 @@ body{
     width: 55px;
     border-radius: 100%;
     border-width: 5px;
-    border-color: var(--grisBoton);
+    border-color: var(--colorBoton);
     background-color: var(--botonback);
-    color: var(--grisBoton);;
+    color: var(--colorBoton);;
     font-size: 30px;
     display: flex;
     flex-direction: row;
@@ -38,7 +38,7 @@ body{
 
 .btn-float>.btn:hover{
        color: #fff8f1;
-       background-color: var(--grisBoton);
+       background-color: var(--colorBoton);
 }
 
 .projects{
@@ -141,6 +141,27 @@ h1{
 .tecnologias{
     width: 98%;
     margin: auto;
+}
+
+#contacto{
+    margin-bottom: 50px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--colorBoton);
+    background-color: var(--botonback);
+    border-radius: 30px;
+}
+
+#contacto>#submitButton{
+    margin: 5px;
+
+}
+
+#contacto>#submitButton>#submitClick{
+    border-color: var(--colorBoton);
+    background-color: var(--botonback);
+    color: var(--colorBoton);
 }
 
 @media (max-width: 426px){
